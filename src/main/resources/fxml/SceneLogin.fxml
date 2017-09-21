@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="loginWindow" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.rabcom2maven.LoginController">
+    <children>
+        <AnchorPane id="anchorPane2" layoutY="24.0" prefHeight="259.0" prefWidth="500.0" styleClass="top-segment" AnchorPane.bottomAnchor="217.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
+            <children>
+                <VBox id="VBox" alignment="CENTER" layoutX="34.5" layoutY="32.5" prefHeight="231.0" prefWidth="424.0" spacing="5.0" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="31.0">
+                    <children>
+                        <AnchorPane id="AnchorPane" prefHeight="180.0" prefWidth="430.0">
+                            <children>
+                                <Label id="label1" layoutX="14.0" layoutY="67.0" text="Имя пользователя" />
+                                <TextField id="textField1" fx:id="username" layoutY="86.0" prefWidth="415.0" promptText="Username" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" />
+                                <Label id="label1" layoutX="14.0" layoutY="139.0" text="Пароль" />
+                                <PasswordField id="passwordField1" fx:id="password" layoutY="157.0" prefWidth="415.0" promptText="Password" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" />
+                                <ImageView id="app-login-logo" layoutY="-12.0">
+                                    <image>
+                                        <Image url="@../image/Logo.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <Button id="button1" fx:id="login" defaultButton="true" layoutX="40.0" layoutY="330.0" onAction="#processLogin" prefHeight="70.0" prefWidth="400.0" text="Логин" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" />
+        <Button id="button2" fx:id="exit_of" cache="true" defaultButton="true" layoutX="40.0" layoutY="410.0" mnemonicParsing="false" onAction="#processLogOf" prefHeight="70.0" prefWidth="400.0" text="Выход" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" />
+        <HBox id="hBox1" alignment="CENTER" layoutX="41.0" layoutY="293.0" prefHeight="25.0" prefWidth="418.0" AnchorPane.bottomAnchor="182.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0">
+            <children>
+                <Label id="label2" fx:id="errorMessage" />
+            </children>
+        </HBox>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="500.0" text="Форма для ввода логина и пароля" AnchorPane.bottomAnchor="475.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+            </padding>
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis>
+        </Label>
+    </children>
+</AnchorPane>
