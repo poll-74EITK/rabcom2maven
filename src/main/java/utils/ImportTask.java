@@ -135,7 +135,7 @@ public class ImportTask extends Thread{
 	pst.setString(38, component);
 	
         pst.execute();
-        //System.out.println(i);
+        System.out.println(i);
         localI = i;
         } 
 
